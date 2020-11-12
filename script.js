@@ -1,36 +1,55 @@
 let CNN =0;
 let REP =0;
 let NDTV =0;
-
 function addCNN() {
     CNN++;
     console.log("CNN:"+CNN);
-   
 }
-
 function addREP() {
     REP++;
     console.log("REP:"+REP);
-    
-  }
-
+}
 function addNDTV() {
     NDTV++;
-    console.log("NDTV:"+NDTV);  
-    
-  }
+    console.log("NDTV:"+NDTV);   
+}
 
-  function result() {
-      if (CNN>NDTV && CNN>REP){
-          document.getElementById("result-cnn").style.visibility = "visible";
+function result() {
+    if (CNN>NDTV && CNN>REP){
+          document.getElementById("result-cnn").style.display = "block";
           document.getElementById("result-cnn").classList.toggle('card-img-top');
-      }
-      else if (NDTV>CNN && NDTV>REP){
-        document.getElementById("result-ndtv").style.visibility = "visible";
+    }
+    else if (NDTV>CNN && NDTV>REP){
+        document.getElementById("result-ndtv").style.display = "block";
         document.getElementById("result-ndtv").classList.toggle('card-img-top');
-    }else if (REP>CNN && NDTV<REP){
-        document.getElementById("result-rep").style.visibility = "visible";
+    }
+    else if (REP>CNN && NDTV<REP){
+        document.getElementById("result-rep").style.display = "block";
         document.getElementById("result-rep").classList.toggle('card-img-top');
+    }
+    else if(NDTV==0 && CNN==0 && REP==0){
+        alert("Invalid Selection");
+    }
+    else if(NDTV==CNN && CNN==REP && REP==NDTV){
+        document.getElementById("result-rep").style.display = "block";
+        document.getElementById("result-cnn").style.display = "block";
+        document.getElementById("result-ndtv").style.display = "block";
+        document.getElementById("multiple").classList.toggle('card-img-top');
+    }
+    else if (REP==CNN){
+        document.getElementById("result-rep").style.display = "block";
+        document.getElementById("result-cnn").style.display = "block";
+        document.getElementById("multiple").classList.toggle('card-img-top');
+    }
+    else if (NDTV==CNN){
+        document.getElementById("result-ndtv").style.display = "block";
+        document.getElementById("result-cnn").style.display = "block";
+        document.getElementById("multiple").classList.toggle('card-img-top');
+    }
+    else if (NDTV==REP){
+        document.getElementById("result-ndtv").style.display = "block";
+        document.getElementById("result-rep").style.display = "block";
+        document.getElementById("multiple").classList.toggle('card-img-top');
     }
   }
 

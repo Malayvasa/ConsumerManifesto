@@ -12,11 +12,14 @@
 }
 
 #result-cnn{
-    visibility: hidden;
+    display: none;
 }
 #result-rep{
-    visibility: hidden;
+    display: none;
 }
 #result-ndtv{
-    visibility: hidden;
+    display: none;
+}
+#multiple{
+    display: none;
 }
