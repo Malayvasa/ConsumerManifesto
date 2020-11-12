@@ -40,21 +40,25 @@ function result() {
         document.getElementById("result-cnn").style.display = "block";
         document.getElementById("result-ndtv").style.display = "block";
         document.getElementById("multiple").classList.toggle('card-img-top');
+        document.getElementById("twitter-all").style.display ="flex";
     }
     else if (REP==CNN){
         document.getElementById("result-rep").style.display = "block";
         document.getElementById("result-cnn").style.display = "block";
         document.getElementById("multiple").classList.toggle('card-img-top');
+        document.getElementById("twitter-republic-cnn").style.display ="flex";
     }
     else if (NDTV==CNN){
         document.getElementById("result-ndtv").style.display = "block";
         document.getElementById("result-cnn").style.display = "block";
         document.getElementById("multiple").classList.toggle('card-img-top');
+        document.getElementById("twitter-cnn-ndtv").style.display ="flex";
     }
     else if (NDTV==REP){
         document.getElementById("result-ndtv").style.display = "block";
         document.getElementById("result-rep").style.display = "block";
         document.getElementById("multiple").classList.toggle('card-img-top');
+        document.getElementById("twitter-republic-ndtv").style.display ="flex";
     }
   }
 
