@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+.container {
+    /* background-color: cadetblue; */
+    text-align: center;
+}
+
+.img {
+    padding: 1%;
+}
+
+.level-heading{
+    color: black;
+    font-family: 'Space Mono', monospace;
+    margin-bottom: 30px;
+}
+
+#result-cnn{
+    visibility: hidden;
+}
+#result-rep{
+    visibility: hidden;
+}
+#result-ndtv{
+    visibility: hidden;
+}
