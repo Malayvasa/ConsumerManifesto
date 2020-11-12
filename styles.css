@@ -1,18 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
 .container {
-    /* background-color: cadetblue; */
     text-align: center;
 }
-
-.img {
-    padding: 1%;
+.card{
+    margin: 2%;
 }
 
-.level-heading{
-    color: black;
-    font-family: 'Space Mono', monospace;
-    margin-bottom: 30px;
+.btn{
+    margin:2% ;
 }
 
 #result-cnn{

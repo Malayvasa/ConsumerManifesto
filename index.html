@@ -1,108 +1,91 @@
 <html lang="en">
     <head>
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <meta charset="utf-8" />
   
     </head>
     <body>
-      <div class="container">
-          <h1 class="level-heading">Level One Selection</h1>
-        <div class="img">
-            <img src="./img/CNN.png" alt="CNN" style="width:10%;" onclick="addCNN();">
-          </div>
-          <div class="img">
-            <img src="./img/NDTV.png" alt="NDTV" style="width:10%" onclick="addNDTV()">
-          </div>
-          <div class="img">
-            <img src="./img/Republic.png" alt="Republic" style="width:10%" onclick="addREP()">
-          </div>
-          <hr>
-      </div>
 
-      <div class="container">
-        <h1 class="level-heading">Level Two Selection</h1>
-      <div class="img">
-          <img src="./img/CNN.png" alt="CNN" style="width:10%;" onclick="addCNN()">
+      <div class="card" id="C1">
+        <div class="card-header">
+          Section One Selection
         </div>
-        <div class="img">
-          <img src="./img/NDTV.png" alt="NDTV" style="width:10%" onclick="addNDTV()">
+        <div class="card-body">
+        <button type="button" id="C1A" class="btn btn-outline-primary btn-lg" onclick="addCNN(); disable('C1','C1A');" >CNN News18</button>
+        <button type="button" id="C1B" class="btn btn-outline-primary btn-lg" onclick="addNDTV(); disable('C1','C1B');">NDTV</button>
+        <button type="button" id="C1C" class="btn btn-outline-primary btn-lg" onclick="addREP(); disable('C1','C1C');">Republic</button>
         </div>
-        <div class="img">
-          <img src="./img/Republic.png" alt="Republic" style="width:10%" onclick="addREP()">
+      </div>
+
+      <div class="card" id="C2">
+        <div class="card-header">
+          Section Two Selection
         </div>
-        <hr>
-    </div>
-
-    <div class="container">
-      <h1 class="level-heading">Level Three Selection</h1>
-    <div class="img">
-        <img src="./img/CNN.png" alt="CNN" style="width:10%;" onclick="addCNN()">
+        <div class="card-body">
+        <button type="button" id="C2A" class="btn btn-outline-primary btn-lg" onclick="addCNN(); disable('C2','C2A');" >CNN News18</button>
+        <button type="button" id="C2B" class="btn btn-outline-primary btn-lg" onclick="addNDTV(); disable('C2','C2B');">NDTV</button>
+        <button type="button" id="C2C" class="btn btn-outline-primary btn-lg" onclick="addREP(); disable('C2','C2C');">Republic</button>
+        </div>
       </div>
-      <div class="img">
-        <img src="./img/NDTV.png" alt="NDTV" style="width:10%" onclick="addNDTV()">
+
+      <div class="card" id="C3">
+        <div class="card-header">
+          Section Three Selection
+        </div>
+        <div class="card-body">
+        <button type="button" id="C3A" class="btn btn-outline-primary btn-lg" onclick="addCNN(); disable('C3','C3A');" >CNN News18</button>
+        <button type="button" id="C3B" class="btn btn-outline-primary btn-lg" onclick="addNDTV(); disable('C3','C3B');">NDTV</button>
+        <button type="button" id="C3C" class="btn btn-outline-primary btn-lg" onclick="addREP(); disable('C3','C3C');">Republic</button>
+        </div>
       </div>
-      <div class="img">
-        <img src="./img/Republic.png" alt="Republic" style="width:10%" onclick="addREP()">
+
+      <div class="card" id="C4">
+        <div class="card-header">
+          Section Four Selection
+        </div>
+        <div class="card-body">
+        <button type="button" id="C4A" class="btn btn-outline-primary btn-lg" onclick="addCNN(); disable('C4','C4A');" >CNN News18</button>
+        <button type="button" id="C4B" class="btn btn-outline-primary btn-lg" onclick="addNDTV(); disable('C4','C4B');">NDTV</button>
+        <button type="button" id="C4C" class="btn btn-outline-primary btn-lg" onclick="addREP(); disable('C4','C4C');">Republic</button>
+        </div>
       </div>
-      <hr>
-  </div>
 
-  <div class="container">
-    <h1 class="level-heading">Level Four Selection</h1>
-  <div class="img">
-      <img src="./img/CNN.png" alt="CNN" style="width:10%;" onclick="addCNN()">
-    </div>
-    <div class="img">
-      <img src="./img/NDTV.png" alt="NDTV" style="width:10%" onclick="addNDTV()">
-    </div>
-    <div class="img">
-      <img src="./img/Republic.png" alt="Republic" style="width:10%" onclick="addREP()">
-    </div>
-    <hr>
-</div>
+      <div class="card" id="C5">
+        <div class="card-header">
+          Section Five Selection
+        </div>
+        <div class="card-body">
+        <button type="button" id="C5A" class="btn btn-outline-primary btn-lg" onclick="addCNN(); disable('C5','C5A');" >CNN News18</button>
+        <button type="button" id="C5B" class="btn btn-outline-primary btn-lg" onclick="addNDTV(); disable('C5','C5B');">NDTV</button>
+        <button type="button" id="C5C" class="btn btn-outline-primary btn-lg" onclick="addREP(); disable('C5','C5C');">Republic</button>
+        </div>
+      </div>
 
-<div class="container">
-  <h1 class="level-heading">Level Five Selection</h1>
-<div class="img">
-    <img src="./img/CNN.png" alt="CNN" style="width:10%;" onclick="addCNN()">
-  </div>
-  <div class="img">
-    <img src="./img/NDTV.png" alt="NDTV" style="width:10%" onclick="addNDTV()">
-  </div>
-  <div class="img">
-    <img src="./img/Republic.png" alt="Republic" style="width:10%" onclick="addREP()">
-  </div>
-  <hr>
-</div>
+      <div class="card" id="C6">
+        <div class="card-header">
+          Section Five Selection
+        </div>
+        <div class="card-body">
+        <button type="button" id="C6A" class="btn btn-outline-primary btn-lg" onclick="addCNN(); disable('C6','C6A');" >CNN News18</button>
+        <button type="button" id="C6B" class="btn btn-outline-primary btn-lg" onclick="addNDTV(); disable('C6','C6B');">NDTV</button>
+        <button type="button" id="C6C" class="btn btn-outline-primary btn-lg" onclick="addREP(); disable('C6','C6C');">Republic</button>
+        </div>
+      </div>
 
-<div class="container">
-  <h1 class="level-heading">Level Six Selection</h1>
-<div class="img">
-    <img src="./img/CNN.png" alt="CNN" style="width:10%;" onclick="addCNN()">
-  </div>
-  <div class="img">
-    <img src="./img/NDTV.png" alt="NDTV" style="width:10%" onclick="addNDTV()">
-  </div>
-  <div class="img">
-    <img src="./img/Republic.png" alt="Republic" style="width:10%" onclick="addREP()">
-  </div>
-  <hr>
-</div>
+      <div class="card">
+        <img id="result-cnn" src="./img/CNN.png" alt="CNN">
+        <img id="result-ndtv" src="./img/NDTV.png" alt="NDTV>
+        <img id="result-rep" src="./img/Republic.png" alt="Republic">
+        <div class="card-body">
+          <h5 class="card-title">Result</h5>
+          <p class="card-text">See what channel you should be watching!</p>
+          <button class="btn btn-primary" onclick="result()">Calculate</button>
+        </div>
+      </div>
 
-<div class="container">
-  <h1 class="level-heading">Results</h1>
-  <button onclick="result()">Calculate</button>
-<div class="img" id="result-cnn">
-    <img src="./img/CNN.png" alt="CNN" style="width:10%;" onclick="addCNN()">
-  </div>
-  <div class="img"  id="result-ndtv">
-    <img src="./img/NDTV.png" alt="NDTV" style="width:10%" onclick="addNDTV()">
-  </div>
-  <div class="img"  id="result-rep">
-    <img src="./img/Republic.png" alt="Republic" style="width:10%" onclick="addREP()">
-  </div>
-  <hr>
-</div>
     </body>
   </html>
